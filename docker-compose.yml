@@ -42,9 +42,9 @@ services:
       - back-tier
 
   snmp-exporter:
-    image: brunsgaard/snmp_exporter
+    image: brunsgaard/snmp-exporter
     volumes:
-      - snmp-exporter:/snmp-exporter
+      - ./snmp-exporter/:/snmp-exporter/
     expose:
       - 9116
     networks:
